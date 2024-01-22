@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.videos - Vídeo educativo sobre tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video id="video" src="video.mp4" controls></video>
+            <div class="video-info">
+                <h1 id="video-title">Vídeo educativo sobre tecnologia</h1>
+                <p id="video-description">Neste vídeo, você vai aprender sobre os conceitos básicos de programação, como variáveis, funções, estruturas de controle e muito mais.</p>
+                <div class="video-stats">
+                    <span id="video-views">0 visualizações</span>
+                    <span id="video-date">Publicado em 22/01/2024</span>
+                    <div class="video-rating">
+                        <button id="like-button" data-value="1">👍</button>
+                        <output id="like-count">0</output>
+                        <button id="dislike-button" data-value="-1">👎</button>
+                        <output id="dislike-count">0</output>
+                    </div>
+                </div>
+                <div class="video-subscribe">
+                    <img id="video-channel-logo" src="logo.png" alt="Logo do canal T.videos">
+                    <span id="video-channel-name">T.videos</span>
+                    <button id="subscribe-button">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+        <div class="comment-container">
+            <h2 id="comment-title">Comentários</h2>
+            <div id="comment-form">
+                <img id="user-avatar" src="avatar.png" alt="Avatar do usuário">
+                <div id="comment-input" contenteditable="true" placeholder="Adicione um comentário público..."></div>
+                <button id="comment-button">Comentar</button>
+            </div>
+            <div id="comment-list"></div>
+        </div>
+    </div>
+</body>
+</html>
